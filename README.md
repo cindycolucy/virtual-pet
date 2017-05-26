@@ -1,2 +1,1 @@
-# virtual-pet
-# virtual-pet
+This is my virtual pet.
