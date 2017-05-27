@@ -3,17 +3,18 @@ This is Cindy's virtual pet.
 The purpose of this game is to feed, water and play with a cat so that he doesn't die.
 
 Instance Variables: 
-hunger
-thirst
+hunger,
+thirst,
 boredom
 
 Methods: 
-boolean "dead" returns true if all conditions are met
-"feed" decreases hunger instance
-"water" decreases thirst instance
-"play" decreases boredom instance
-boolean "is.x" returns true if condition is met
-int "get.x" returns current level of instances
-tick increases all instances
+The boolean "dead" returns true if all conditions are met.
+If the hunger, thirst and boredom variables get high enough, your cat cares for himself
+"Feed fish" decreases hunger instance more than "feed chicken."
+"Water" decreases thirst instance.
+"Play" decreases boredom instance.
+The boolean "is.x" returns true if condition is met.
+The int "get.x" returns current level of instances.
+"Tick" increases all instances.
 
-Loop tick if any instance variable gets to certain level, pet dies
+Loop tick if any instance variable gets to certain level, cat dies.

@@ -55,10 +55,11 @@ public class VirtualPetApp {
 				switch (activity) {
 				case "1":
 					writeLine("What do you want to feed " + cat.name + "?");
-					writeLine("Enter fish or chicken.");
+					writeLine("Enter \"fish\" or \"chicken\".");
 
 					String foodType = input.next();
 
+					//Switch case for type of food
 					switch (foodType) {
 					case "fish":
 						cat.feedFish();
@@ -69,6 +70,7 @@ public class VirtualPetApp {
 						writeLine ("You fed " + cat.name + " chicken.");
 						break;
 					}
+					//Case to water the pet
 					case "2":
 						cat.water();
 						if (cat.isHungry()) {
@@ -87,6 +89,7 @@ public class VirtualPetApp {
 							writeLine(cat.name + " is not bored right now.");
 						}
 						break;
+					//Case to play with cat
 					case "3":
 						cat.play();
 						if (cat.isHungry()) {
@@ -124,7 +127,7 @@ public class VirtualPetApp {
 		}
 
 
-
+	//Method to write line
 	public static void writeLine(String message) {
 		System.out.println(message);
 	}
